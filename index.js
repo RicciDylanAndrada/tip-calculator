@@ -19,7 +19,9 @@ function calculate(percentage){
     case "5%":
      extra = (billAmount * 0.05) / people
     sum = extra + billAmount
-    perPerson = billAmount/people;
+    perPerson = (billAmount/people) + extra;
+    perPerson = perPerson.toFixed(2);
+
 
 
 
@@ -29,14 +31,18 @@ function calculate(percentage){
 
         extra = (parseFloat(billAmount) * 0.10) / people
       sum = extra + billAmount
-      perPerson = billAmount/people;
+      perPerson = (billAmount/people) + extra;
+      perPerson = perPerson.toFixed(2);
+
 
 
         break;
         case "15%":
           extra = (billAmount * 0.15) / people
         sum = extra + billAmount
-        perPerson = billAmount/people;
+        perPerson = (billAmount/people) + extra;
+        perPerson = perPerson.toFixed(2);
+
 
 
           break;
@@ -44,7 +50,9 @@ function calculate(percentage){
           case "25%":
             extra = (billAmount * 0.25) / people
           sum = extra + billAmount
-          perPerson = billAmount/people;
+          perPerson = (billAmount/people) + extra;
+          perPerson = perPerson.toFixed(2);
+
 
 
             break;
@@ -52,7 +60,8 @@ function calculate(percentage){
             case "50%":
              extra = (billAmount * 0.50) / people
             sum = extra + billAmount
-            perPerson = billAmount/people;
+            perPerson = (billAmount/people) + extra;
+            perPerson = perPerson.toFixed(2);
 
               break;
 
@@ -66,5 +75,7 @@ function calculate(percentage){
 
 }
 document.getElementById("sum").innerHTML = extra
+document.getElementById("sumPerson").innerHTML = perPerson
+
 
 }

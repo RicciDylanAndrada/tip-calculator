@@ -10,6 +10,9 @@
 
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -24,17 +27,17 @@
 
     <div class="leftSide">
       <p>Bill</p>
-      <input type="text" name="" value="" placeholder="$                      0">
+      <input id="bill" type="text" name="" value="" placeholder="$                      0">
 
       <p>Select Tip %</p>
-      <button type="button" name="button">5%</button>
-      <button type="button" name="button">10%</button>
-      <button type="button" name="button">15%</button>
-      <button type="button" name="button">25%</button>
-      <button type="button" name="button">50%</button>
-      <button type="button" name="button">Custom</button>
+      <button class ="percent" type="button" name="button">5%</button>
+      <button class ="percent" type="button" name="button">10%</button>
+      <button class ="percent" type="button" name="button">15%</button>
+      <button class ="percent" type="button" name="button">25%</button>
+      <button class ="percent" type="button" name="button">50%</button>
+      <button class ="percent" type="button" name="button">Custom</button>
       <p>Number of People</p>
-      <input type="text" name="" value="">
+      <input id="numOfPeople" type="text" name="" value="">
     </div>
 
     <div class="rightSide">
@@ -42,6 +45,7 @@
         <div class="tipAmount">
           <h1>Tip Amount </h1>
           <p> / person</p>
+          <span id="sum" >$0.00</span>
         </div>
 
 
@@ -52,13 +56,13 @@
 
 
 
-      Reset
+      <button type="button" name="button">Reset</button>
     </div>
 
   </div>
 </div>
 
 
-
+<script src="index.js" charset="utf-8"></script>
 </body>
 </html>

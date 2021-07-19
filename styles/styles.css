@@ -1,5 +1,6 @@
 body{
   background: hsl(185, 41%, 84%);
+font-family: 'Space Mono', monospace;
 }
 
 .box{
@@ -29,7 +30,7 @@ body{
   width: 50%;
   background: hsl(183, 100%, 15%);
   margin: 20px;
-  padding: 40px 20px;
+  padding: 40px 30px;
   line-height: 15px;
 
 
@@ -45,12 +46,13 @@ body{
 }
 .rightSide p{
   font-size: 10px;
-  font-color:hsl(183, 100%, 15%);
+  color :hsl(184, 14%, 56%);
   margin-top: 0;
 }
 .leftSide{
   border-radius: 25px;
   padding: 30px;
+  font-size: 12px;
 
 
 
@@ -60,5 +62,5 @@ body{
 
 }
 .totalAmount{
-  margin-top: 60px;
+  margin-top: 30px;
 }

@@ -22,25 +22,27 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 44%);  }
   </style>
 </head>
 <body>
 
-<div class="box">
-  <div class="insideBox">
+<div class="box ">
+  <h1 style="color:hsl(183, 100%, 15%); text-align:center; font-size: 15px;">TIP SPLITTER</h1>
+
+  <div class="insideBox ">
 
     <div class="leftSide">
       <p>Bill</p>
       <input class ="inputs" id="bill" type="text" name="" value="" placeholder="$                      0">
 
       <p>Select Tip %</p>
-      <button class ="percent btn btn-primary " type="button" name="button">5%</button>
-      <button class ="percent btn btn-primary " type="button" name="button">10%</button>
-      <button class ="percent btn btn-primary" type="button" name="button">15%</button>
-      <button class ="percent btn btn-primary" type="button" name="button">25%</button>
-      <button class ="percent btn btn-primary" type="button" name="button">50%</button>
-      <button class ="percent custom btn btn-primary" type="button" name="button">Custom</button>
+      <button class ="percent percent1 btn btn-primary " type="button" name="button">5%</button>
+      <button class ="percent percent1 btn btn-primary " type="button" name="button">10%</button>
+      <button class ="percent percent1  btn btn-primary" type="button" name="button">15%</button>
+      <button class ="percent percent1 btn-primary" type="button" name="button">25%</button>
+      <button class ="percent percent1 btn btn-primary" type="button" name="button">50%</button>
+      <input style="width: 80px; height:36px; color:hsl(183, 100%, 15%) !important; text-align:center; margin-top:-10px;" type="text" name="" value="" placeholder="CUSTOM"  id="inputButton" class="inputButton" >
       <p>Number of People</p>
       <div class="inputContainer">
         <i class="fa fa-user icon"></i>
@@ -51,7 +53,7 @@
 
     </div>
 
-    <div class="rightSide">
+    <div class="rightSide ">
 
         <div class="tipAmount">
           <h1>Tip Amount</h1>
@@ -70,7 +72,7 @@
 
         <div class="d-grid gap-2">
 
-          <button class=" reset btn btn-primary" type="button" name="button">Reset</button>
+          <button  id="percent" class=" reset percent btn btn-primary" type="button" name="button">Reset</button>
 
         </div>
     </div>

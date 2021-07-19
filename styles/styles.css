@@ -6,6 +6,7 @@ font-family: 'Space Mono', monospace;
 .box{
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
  align-items: center;
  height: 100vh;
@@ -19,6 +20,7 @@ font-family: 'Space Mono', monospace;
   background: hsl(0, 0%, 100%);
   border-radius: 25px;
   display: flex;
+
 
 }
 .rightSide{
@@ -56,6 +58,7 @@ font-family: 'Space Mono', monospace;
 
 
 
+
 }
 .tipAmount{
   margin-bottom: 30px;
@@ -74,7 +77,7 @@ font-family: 'Space Mono', monospace;
   color:hsl(172, 67%, 45%);
 
   padding-top:40px;
-  margin-left: 60px;
+  margin-left: 98px;
   font-size: 30px;
 }
 #sumPerson{
@@ -85,7 +88,7 @@ font-family: 'Space Mono', monospace;
   font-size: 30px;
 
 }
-.percent{
+.percent1{
   margin-bottom: 10px;
   width: 80px;
   background-color :hsl(183, 100%, 15%) !important;
@@ -108,4 +111,23 @@ font-family: 'Space Mono', monospace;
   color:  hsl(183, 100%, 15%) !important;
   background-color: hsl(172, 67%, 45%) !important;
   border:0;
+}
+@media (max-width: 375px) {
+  .insideBox{
+
+    flex-direction: column;
+
+  }
+  .rightSide{
+    width: 90%;
+  }
+  #sum{
+    font-size: 10px;
+  }
+
+
+
+}
+.inputButton:hover{
+border-color:  hsl(172, 67%, 45%) !important;
 }
